@@ -38,12 +38,19 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-
+    <style type="text/css">
+      #beranda h1 span {
+        color: #dac01d !important;
+      }
+      .section-title h3 span {
+        color: #dac01d !important;
+      }
+      .back-to-top {
+        background: #dac01d !important;
+      }
+    </style>
     <!-- Google tag (gtag.js) -->
-    <script
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=G-Q78JTRL7BP"
-    ></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q78JTRL7BP"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -156,7 +163,7 @@
               <a class="nav-link scrollto active" href="#beranda">Beranda</a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="#dokumen">Pengumuman</a>
+              <a class="nav-link scrollto" id="pengumuman" href="#dokumen">Pengumuman</a>
             </li>
             <!-- <li><a class="nav-link scrollto" href="#faq">FAQ</a></li> -->
             <!-- <li><a class="nav-link scrollto" href="#daftar">Daftar</a></li> -->
@@ -259,11 +266,11 @@
                   <div class="icon">
                     <i class="bx bx-file"></i>
                   </div>
-                  <h4>
+                  <h5>
                     Hasil Akhir Seleksi Kompetensi Pengadaan Calon PPPK (Nakes)
                     di Lingkungan Pemerintah Kota Gorontalo Tahun Anggaran
                     2023.&nbsp;&nbsp;<i class="bi bi-download"></i>
-                  </h4>
+                  </h5>
                 </a>
                 <p>
                   Pengumuman Hasil Akhir Seleksi Kompetensi Pengadaan Calon
@@ -289,11 +296,11 @@
                   <div class="icon">
                     <i class="bx bx-file"></i>
                   </div>
-                  <h4>
+                  <h5>
                     Hasil Akhir Seleksi Kompetensi Pengadaan Calon PPPK (Teknis)
                     di Lingkungan Pemerintah Kota Gorontalo Tahun Anggaran
                     2023.&nbsp;&nbsp;<i class="bi bi-download"></i>
-                  </h4>
+                  </h5>
                 </a>
                 <p>
                   Pengumuman Hasil Akhir Seleksi Kompetensi Pengadaan Calon
@@ -843,7 +850,6 @@
       class="back-to-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
-
     <!-- Vendor JS Files -->
     <script src="__js/purecounter_vanilla.js"></script>
     <script src="__js/aos.js"></script>
@@ -856,5 +862,11 @@
 
     <!-- Template Main JS File -->
     <script src="__js/main.js"></script>
+
+    <script>
+        document.getElementById("pengumuman").click(); 
+      // setTimeout(function(){
+      // }, 1000)
+    </script>
   </body>
 </html>
